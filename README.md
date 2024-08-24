@@ -1,0 +1,2 @@
+# SetsunaScarletStream
+HLSで配信されてるのを録画するやつ

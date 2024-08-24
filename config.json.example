@@ -1,0 +1,17 @@
+{
+  "shows": [
+    {
+      "name": "朝のニュース",
+      "url": "https://stream.example.com/news.m3u8",
+      "schedule": [
+        { "dayOfWeek": "Monday", "startTime": "7:00", "endTime": "7:30" },
+        { "dayOfWeek": "Tuesday", "startTime": "7:00", "endTime": "7:30" },
+        { "dayOfWeek": "Wednesday", "startTime": "7:00", "endTime": "7:30" },
+        { "dayOfWeek": "Thursday", "startTime": "7:00", "endTime": "7:30" },
+        { "dayOfWeek": "Friday", "startTime": "7:00", "endTime": "7:30" }
+      ]
+    }
+  ],
+  "outputDirectory": "./recordings",
+  "slackWebhookUrl": "https://hooks.slack.com/services/xxx/yyy/zzz"
+}

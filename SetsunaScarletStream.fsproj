@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net7.0</TargetFramework>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <Compile Include="Program.fs"/>
+        <Content Include="config.json">
+          <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+        </Content>
+        <Content Include="recordings\.gitkeep" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Content Include="config.json.example">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Content>
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Akka.FSharp" Version="1.5.27.1" />
+      <PackageReference Include="FSharp.Data" Version="6.4.0" />
+      <PackageReference Update="FSharp.Core" Version="8.0.400" />
+    </ItemGroup>
+
+</Project>
