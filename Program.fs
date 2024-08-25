@@ -177,14 +177,12 @@ let main argv =
     recorder <! CheckSchedule
 
     // Keep the application running
-    Console.WriteLine("Recorder is running. Press Enter to exit...")
-    Console.ReadLine() |> ignore
-
-    // Terminate the actor system
-    system.Terminate() |> ignore
-    system.WhenTerminated.Wait()
-
-    // Dispose HttpClient
-    HttpClientSingleton.client.Dispose()
+    printfn "Recorder is running. The application will continue to run until the container is stopped."
+    
+    // Use a simple infinite loop to keep the application running
+    while true do
+        System.Threading.Thread.Sleep(3600000) // Sleep for 1 hour
+        let currentTime = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss")
+        printfn "[%s] Recorder is still running..." currentTime
 
     0 // return an integer exit code

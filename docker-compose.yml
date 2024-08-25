@@ -1,0 +1,8 @@
+version: '3'
+services:
+  setsuna-scarlet-stream:
+    build: .
+    volumes:
+      - ./config.json:/app/config.json
+      - ./recordings:/app/recordings
+    restart: always

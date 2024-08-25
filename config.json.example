@@ -12,6 +12,6 @@
       ]
     }
   ],
-  "outputDirectory": "./recordings",
+  "outputDirectory": "/app/recordings",
   "slackWebhookUrl": "https://hooks.slack.com/services/xxx/yyy/zzz"
 }
